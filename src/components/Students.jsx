@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { Typography, Row, Col, Card, Input, Button, Space, Avatar, Tag } from 'antd';
 import { SearchOutlined, UserOutlined, IdcardOutlined } from '@ant-design/icons';
+import { useNavigate } from 'react-router';
 
 const { Title, Paragraph, Text } = Typography;
 const { Search } = Input;
 
 const Students = () => {
+  const navigate = useNavigate();
   const [searchTerm, setSearchTerm] = useState('');
 
   // Real student data - CST Session 2223
@@ -66,8 +68,8 @@ const Students = () => {
   );
 
   const handleStudentClick = (student) => {
-    // Just show an alert for now - no navigation
-    alert(`Student: ${student.name}\nRoll: ${student.roll}`);
+    // Navigate to student's profile page
+    navigate(`/student/${student.roll}`);
   };
 
   const getAvatarColor = (name) => {
