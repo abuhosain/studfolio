@@ -476,7 +476,6 @@ const styles = {
     fontSize: '16px',
     color: '#666',
     lineHeight: '1.8',
-    margin: '0 0 40px 0',
     maxWidth: '800px',
     margin: '0 auto 40px auto'
   },
