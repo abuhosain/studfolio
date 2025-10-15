@@ -32,14 +32,6 @@ const Banner = () => {
     },
     {
       id: 3,
-      image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=1920&h=1080&fit=crop',
-      title: 'Innovation Starts Here',
-      subtitle: 'Build the future',
-      description: 'The best way to predict the future is to create it. Let your creativity and passion drive innovation.',
-      buttonText: 'Create Portfolio'
-    },
-    {
-      id: 4,
       image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1920&h=1080&fit=crop',
       title: 'Teamwork Makes Dreams Work',
       subtitle: 'Connect and collaborate',
@@ -47,7 +39,7 @@ const Banner = () => {
       buttonText: 'Join Community'
     },
     {
-      id: 5,
+      id: 4,
       image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1920&h=1080&fit=crop',
       title: 'Never Stop Learning',
       subtitle: 'Knowledge is power',

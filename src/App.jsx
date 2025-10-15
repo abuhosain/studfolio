@@ -8,8 +8,9 @@ import {
   ProjectOutlined,
   ContactsOutlined
 } from '@ant-design/icons';
+import Footer from './components/Footer';
 
-const { Header, Content, Footer } = Layout;
+const { Header, Content } = Layout;
 import './index.css';
 const App = () => {
   const navigate = useNavigate();
@@ -26,11 +27,7 @@ const App = () => {
       icon: <InfoCircleOutlined />,
       label: 'About',
     },
-    {
-      key: '/projects',
-      icon: <ProjectOutlined />,
-      label: 'Projects',
-    },
+     
     {
       key: '/contact',
       icon: <ContactsOutlined />,
@@ -43,7 +40,7 @@ const App = () => {
   };
 
   return (
-    <Layout style={{ minHeight: '100vh', padding: "0", margin: "0" }}>
+    <Layout style={{ padding: "0", margin: "0" }}>
       <Header
         style={{
           display: 'flex',
@@ -85,24 +82,12 @@ const App = () => {
       </Header>
 
       <Content>
-        <div style={{ minHeight: 'calc(100vh - 134px)', width: '100%' }}>
+        <div style={{ width: '100%',  }}>
           <Outlet />
         </div>
       </Content>
 
-      <Footer
-        style={{
-          textAlign: 'center',
-          background: '#ffffff',
-          borderTop: '1px solid #e8e8e8',
-          width: '100%',
-          padding: '16px 24px'
-        }}
-      >
-        <span style={{ color: '#999999', fontSize: '14px' }}>
-          Studfolio ©{new Date().getFullYear()} Helped by NeexG team
-        </span>
-      </Footer>
+      <Footer />
     </Layout>
   );
 };
