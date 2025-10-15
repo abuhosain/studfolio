@@ -356,8 +356,8 @@ const Home = () => {
                     <UserOutlined style={{ color: 'white', fontSize: '20px' }} />
                   </div>
                   <div>
-                    <Title level={5} style={{ margin: 0, color: '#1f2937' }}>Ahmed Rahman</Title>
-                    <Text style={{ color: '#6b7280' }}>CST Student - Session 2223</Text>
+                    <Title level={5} style={{ margin: 0, color: '#1f2937' }}>Polash Kumar</Title>
+                    <Text style={{ color: '#6b7280' }}>CST Student - Roll: 515401</Text>
                   </div>
                 </div>
                 <Title level={4} style={{ color: '#1f2937', marginBottom: '12px' }}>
@@ -389,8 +389,8 @@ const Home = () => {
                     <UserOutlined style={{ color: 'white', fontSize: '20px' }} />
                   </div>
                   <div>
-                    <Title level={5} style={{ margin: 0, color: '#1f2937' }}>Fatima Khatun</Title>
-                    <Text style={{ color: '#6b7280' }}>CST Student - Session 2223</Text>
+                    <Title level={5} style={{ margin: 0, color: '#1f2937' }}>Md. Al Amin</Title>
+                    <Text style={{ color: '#6b7280' }}>CST Student - Roll: 616383</Text>
                   </div>
                 </div>
                 <Title level={4} style={{ color: '#1f2937', marginBottom: '12px' }}>

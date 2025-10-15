@@ -27,7 +27,11 @@ const App = () => {
       icon: <InfoCircleOutlined />,
       label: 'About',
     },
-     
+    {
+      key: '/students',
+      icon: <ProjectOutlined />,
+      label: 'Students',
+    },
     {
       key: '/contact',
       icon: <ContactsOutlined />,
@@ -82,7 +86,7 @@ const App = () => {
       </Header>
 
       <Content>
-        <div style={{ width: '100%',  }}>
+        <div style={{ width: '100%', }}>
           <Outlet />
         </div>
       </Content>
