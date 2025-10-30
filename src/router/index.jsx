@@ -6,6 +6,7 @@ import Students from "../components/Students";
 import Contact from "../components/Contact";
 import AbuHosainProfile from "../pages/student/Hosain-715534";
 import HelalProfile from "../pages/student/Helal-715524";
+import RakibulProfile from "../pages/student/Rakibul-715523";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: "student/715534",
         element: <AbuHosainProfile />,
+      },
+      {
+        path: "student/715523",
+        element: <RakibulProfile />,
       },
       {
         path: "student/715524",
