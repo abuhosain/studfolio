@@ -5,6 +5,7 @@ import About from "../components/About";
 import Students from "../components/Students";
 import Contact from "../components/Contact";
 import AbuHosainProfile from "../pages/student/Hosain-715534";
+import PrantoPortfolio from "../pages/student/Pranto-715499";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: "student/715534",
         element: <AbuHosainProfile />,
+      },
+      {
+        path: "student/715499",
+        element: <PrantoPortfolio />,
       },
     ],
   },
