@@ -10,6 +10,13 @@ import PolashPortfolio from "../pages/student/Polash-515401";
 import ALAminPortfolio from "../pages/student/Alamin-616383";
 import BarshaPortfolio from "../pages/student/Barsha-616384";
 import NayemPortfolio from "../pages/student/Nayem-702938";
+import SoseePortfolio from "../pages/student/Sosee-708335";
+import NafisPortfolio from "../pages/student/Nafis-715494";
+import BristiPortfolio from "../pages/student/Bristi-715495";
+import MorshedPortfolio from "../pages/student/Morshed-715506";
+import DiponkarPortfolio from "../pages/student/Diponkar-715507";
+import AnnanaPortfolio from "../pages/student/Annana-715508";
+import RafiPortfolio from "../pages/student/Rafi-715510";
 
 const router = createBrowserRouter([
   {
@@ -49,12 +56,40 @@ const router = createBrowserRouter([
         element: <NayemPortfolio />,
       },
       {
-        path: "student/715534",
-        element: <AbuHosainProfile />,
+        path: "student/708335",
+        element: <SoseePortfolio />,
+      },
+      {
+        path: "student/715494",
+        element: <NafisPortfolio />,
+      },
+      {
+        path: "student/715495",
+        element: <BristiPortfolio />,
       },
       {
         path: "student/715499",
         element: <PrantoPortfolio />,
+      },
+      {
+        path: "student/715506",
+        element: <MorshedPortfolio />,
+      },
+      {
+        path: "student/715507",
+        element: <DiponkarPortfolio />,
+      },
+      {
+        path: "student/715508",
+        element: <AnnanaPortfolio />,
+      },
+      {
+        path: "student/715510",
+        element: <RafiPortfolio />,
+      },
+      {
+        path: "student/715534",
+        element: <AbuHosainProfile />,
       },
     ],
   },
