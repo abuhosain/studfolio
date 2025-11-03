@@ -39,6 +39,13 @@ import SabbirPortfolio from "../pages/student/Sabbir-715549";
 import SafaPortfolio from "../pages/student/Safa-715550";
 import ShobujPortfolio from "../pages/student/Shobuj-715551";
 import ShrminPortfolio from "../pages/student/Shrmin-715553";
+import ShriyarPortfolio from "../pages/student/Shariyar-718922";
+import ShafiPortfolio from "../pages/student/Shafi-719026";
+import AyeshaPortfolio from "../pages/student/Ayesha-724098";
+import BishalPortfolio from "../pages/student/Bishal-724099";
+import NabilaPortfolio from "../pages/student/Nabila-726867";
+import MehediPortfolio from "../pages/student/Mehedi-776336";
+import TuhinePortfolio from "../pages/student/Tuhine-777374";
 
 const router = createBrowserRouter([
   {
@@ -200,6 +207,34 @@ const router = createBrowserRouter([
       {
         path: "student/715553",
         element: <ShrminPortfolio />,
+      },
+      {
+        path: "student/718922",
+        element: <ShriyarPortfolio />,
+      },
+      {
+        path: "student/719026",
+        element: <ShafiPortfolio />,
+      },
+      {
+        path: "student/724098",
+        element: <AyeshaPortfolio />,
+      },
+      {
+        path: "student/724099",
+        element: <BishalPortfolio />,
+      },
+      {
+        path: "student/726867",
+        element: <NabilaPortfolio />,
+      },
+      {
+        path: "student/776336",
+        element: <MehediPortfolio />,
+      },
+      {
+        path: "student/777374",
+        element: <TuhinePortfolio />,
       },
     ],
   },
