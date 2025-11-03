@@ -17,6 +17,10 @@ import MorshedPortfolio from "../pages/student/Morshed-715506";
 import DiponkarPortfolio from "../pages/student/Diponkar-715507";
 import AnnanaPortfolio from "../pages/student/Annana-715508";
 import RafiPortfolio from "../pages/student/Rafi-715510";
+import OsimPortfolio from "../pages/student/Osim-715517";
+import ShoumitPortfolio from "../pages/student/Shoumit-715519";
+import RobinPortfolio from "../pages/student/Robin-715520";
+import RuhanPortfolio from "../pages/student/Ruhan-715521";
 
 const router = createBrowserRouter([
   {
@@ -86,6 +90,22 @@ const router = createBrowserRouter([
       {
         path: "student/715510",
         element: <RafiPortfolio />,
+      },
+      {
+        path: "student/715517",
+        element: <OsimPortfolio />,
+      },
+      {
+        path: "student/715519",
+        element: <ShoumitPortfolio />,
+      },
+      {
+        path: "student/715520",
+        element: <RobinPortfolio />,
+      },
+      {
+        path: "student/715521",
+        element: <RuhanPortfolio />,
       },
       {
         path: "student/715534",
