@@ -46,6 +46,8 @@ import BishalPortfolio from "../pages/student/Bishal-724099";
 import NabilaPortfolio from "../pages/student/Nabila-726867";
 import MehediPortfolio from "../pages/student/Mehedi-776336";
 import TuhinePortfolio from "../pages/student/Tuhine-777374";
+import Zihadujjaman from "../pages/student/Zihadujjaman-616372";
+import Zakaria from "../pages/student/Zakaria-616373";
 
 const router = createBrowserRouter([
   {
@@ -235,6 +237,14 @@ const router = createBrowserRouter([
       {
         path: "student/777374",
         element: <TuhinePortfolio />,
+      },
+      {
+        path: "student/616372",
+        element: <Zihadujjaman />,
+      },
+      {
+        path: "student/616373",
+        element: <Zakaria />,
       },
     ],
   },
