@@ -8,3 +8,7 @@
 ::-webkit-scrollbar {
   width: 0;
 }
+
+.ant-menu-horizontal > .ant-menu-item::after {
+  display: none !important;
+}
