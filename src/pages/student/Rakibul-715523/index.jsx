@@ -1,6 +1,12 @@
+import { FiSmile, FiBriefcase, FiTrendingUp } from 'react-icons/fi';
+
 const RakibulProfile = () => {
     const skills = ['html', 'css', 'tailwindcss', 'javascript', 'typescript', 'reactjs', 'nextjs', 'nodejs', 'expressjs', 'mongodb'];
-
+    const stats = [
+        { label: 'Client Satisfaction', value: '98%', icon: FiSmile },
+        { label: 'Completed Projects', value: '35+', icon: FiBriefcase },
+        { label: 'Running Projects', value: '4', icon: FiTrendingUp },
+    ];
     return (
         <div className="bg-gray-50 text-white shadow-xl !py-10 !text-black">
             {/* main wrapper container */}
@@ -40,6 +46,32 @@ const RakibulProfile = () => {
                         </div>
                     </marquee>
                 </div>
+
+            {/* about section */}
+            <section className="!mt-16 text-center">
+                <div className="max-w-3xl !mx-auto">
+                    <h2 className="text-3xl font-bold text-gray-900">About Me</h2>
+                    <p className="!mt-6 text-lg text-gray-600">
+                        Hello, I am Rakibul Hasan, a passionate Front End and MERN stack web developer with a keen eye for design and a love for crafting seamless user experiences.
+                    </p>
+                </div>
+
+                <div className="!mt-10 grid gap-6 md:grid-cols-3">
+                    {stats.map((card) => (
+                        <div
+                            key={card.label}
+                            className="rounded-2xl border border-gray-800 bg-gradient-to-br from-gray-900/80 via-gray-800/70 to-gray-900/90 text-white !py-8 !px-4 shadow-lg space-y-4 text-center"
+                        >
+                            <card.icon className="text-4xl text-white !mx-auto" aria-hidden="true" />
+                            <h3 className="!my-4 text-4xl font-extrabold text-white">{card.value}</h3>
+                            <p className="text-gray-200 font-semibold uppercase tracking-wide text-sm">
+                                {card.label}
+                            </p>
+                        </div>
+                    ))}
+                </div>
+            </section>
+
             </div>
         </div>
     );
