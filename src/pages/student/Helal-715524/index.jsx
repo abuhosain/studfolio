@@ -92,27 +92,28 @@ const HelalProfile = () => (
             .hero-title {
                 font-size: clamp(36px, 5vw, 56px);
                 color: #ffffff;
-                margin: 12px 0;
+                margin: 12px 0 4px;
             }
-            .cta-group {
+            .cta-rail {
                 display: flex;
                 flex-wrap: wrap;
-                gap: 12px;
+                gap: 14px;
                 margin-top: 24px;
             }
-            .cta {
+            .cta-pill {
                 text-decoration: none;
                 padding: 12px 24px;
                 border-radius: 999px;
                 font-weight: 600;
                 font-size: 14px;
+                transition: transform 0.2s ease, filter 0.2s ease;
             }
-            .cta.primary {
-                background: #f43f5e;
+            .cta-pill.primary {
+                background: linear-gradient(120deg, #f43f5e, #f97316);
                 color: white;
-                box-shadow: 0 12px 30px rgba(244,63,94,0.45);
+                box-shadow: 0 12px 30px rgba(244,63,94,0.4);
             }
-            .cta.secondary {
+            .cta-pill.secondary {
                 border: 1px solid rgba(255,255,255,0.35);
                 color: white;
             }
