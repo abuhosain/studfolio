@@ -400,43 +400,22 @@ const PrantoPortfolio = () => {
           <div style={styles.certificationCard}>
             <div>
               <h3 style={styles.certificationTitle}>
-                AWS Certified Cloud Practitioner
+                Complete Web Development
               </h3>
-              <p style={styles.certificationIssuer}>Amazon Web Services</p>
+              <p style={styles.certificationIssuer}>
+                Programming-Hero, Batch-11
+              </p>
             </div>
             <div style={styles.certificationMeta}>
-              <span style={styles.certificationDate}>January 2024</span>
-              <span style={styles.certificationCredential}>AWS-CCP-715534</span>
-            </div>
-          </div>
-
-          <div style={styles.certificationCard}>
-            <div>
-              <h3 style={styles.certificationTitle}>
-                React Developer Certification
-              </h3>
-              <p style={styles.certificationIssuer}>Meta</p>
-            </div>
-            <div style={styles.certificationMeta}>
-              <span style={styles.certificationDate}>December 2023</span>
-              <span style={styles.certificationCredential}>
-                META-REACT-715534
-              </span>
-            </div>
-          </div>
-
-          <div style={styles.certificationCard}>
-            <div>
-              <h3 style={styles.certificationTitle}>
-                Python Programming Certificate
-              </h3>
-              <p style={styles.certificationIssuer}>Python Institute</p>
-            </div>
-            <div style={styles.certificationMeta}>
-              <span style={styles.certificationDate}>November 2023</span>
-              <span style={styles.certificationCredential}>
-                PYTHON-PC-715534
-              </span>
+              <span style={styles.certificationDate}>July 2025</span>
+              <a
+                href="https://i.ibb.co.com/V0s0M01Z/PH-Hero-Course-certificate.jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={styles.certificationCredential}
+              >
+                <span className="text-lg font-bold">Certificate</span>
+              </a>
             </div>
           </div>
         </div>
