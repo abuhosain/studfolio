@@ -74,13 +74,15 @@ const RakibulProfile = () => {
                     flex-direction: column;
                     gap: 48px;
                 }
+                .hero-cluster {
+                    border-radius: 32px;
+                    overflow: hidden;
+                    border: 1px solid rgba(148, 163, 184, 0.12);
+                }
                 .hero {
                     position: relative;
-                    border-radius: 32px;
                     padding: clamp(24px, 4vw, 56px);
                     background: linear-gradient(135deg, rgba(2, 6, 23, 0.95), rgba(15, 23, 42, 0.9));
-                    border: 1px solid rgba(148, 163, 184, 0.12);
-                    overflow: hidden;
                 }
                 .hero::before {
                     content: '';
@@ -188,10 +190,7 @@ const RakibulProfile = () => {
                     transform: translateY(-4px);
                 }
                 .skills-marquee {
-                    border-radius: 0 0 32px 32px;
-                    overflow: hidden;
-                    border: 1px solid rgba(148, 163, 184, 0.2);
-                    border-top: none;
+                    border: 0;
                     background: rgba(0, 0, 0, 0.7);
                 }
                 .skills-marquee marquee {
@@ -376,8 +375,9 @@ const RakibulProfile = () => {
                 }
             `}</style>
             <div className="rakibul-container">
-                <section className="hero">
-                    <div className="hero-content">
+                <div className="hero-cluster">
+                    <section className="hero">
+                        <div className="hero-content">
                         <div className="hero-copy">
                             <span className="hero-badges">Full Stack Developer</span>
                             <h1>Rakibul Hasan</h1>
@@ -409,17 +409,18 @@ const RakibulProfile = () => {
                                 ))}
                             </div>
                         </div>
-                    </div>
-                </section>
-
-                <div className="skills-marquee">
-                    <marquee>
-                        <div className="skills-list">
-                            {skills.map((skill) => (
-                                <span key={skill}>{skill}</span>
-                            ))}
                         </div>
-                    </marquee>
+                    </section>
+
+                    <div className="skills-marquee">
+                        <marquee>
+                            <div className="skills-list">
+                                {skills.map((skill) => (
+                                    <span key={skill}>{skill}</span>
+                                ))}
+                            </div>
+                        </marquee>
+                    </div>
                 </div>
 
                 <section className="section">
