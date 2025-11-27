@@ -389,6 +389,7 @@ const PrantoPortfolio = () => {
         </div>
       </div>
       <hr style={{ margin: "40px 0" }} />
+
       {/* Certifications Section */}
       <div style={styles.section}>
         <div style={styles.sectionHeader}>
