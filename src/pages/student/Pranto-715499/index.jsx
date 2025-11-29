@@ -129,7 +129,7 @@ const PrantoPortfolio = () => {
 
       {/* About me section */}
       <div className="lg:w-[85%] xl:w-[90%] 2xl:w-[60%] !p-5 lg:!p-20 !mx-auto">
-        <div className="bg-white !p-2 lg:!p-10 text-center border-2 rounded-2xl border-amber-400 hover:border-amber-600 shadow-lg">
+        <div className="bg-white !p-2 lg:!p-10 text-center border-1 rounded-2xl border-amber-400 hover:border-amber-600 shadow-lg">
           <h3 className="text-black text-4xl lg:text-5xl !mb-3">
             About <span className="text-amber-500">Me</span>
           </h3>
@@ -183,7 +183,7 @@ const PrantoPortfolio = () => {
           Technologies and expertise I bring to the table
         </p>
         {/*  */}
-        <div className="border w-[95%] !mx-auto !p-5 lg:!p-10 mt-5 rounded-lg border-amber-400 hover:border-amber-600 shadow-lg gap-5 !my-5">
+        <div className="border !mx-auto !p-5 lg:!p-10 rounded-lg border-amber-400 hover:border-amber-600 shadow-lg gap-5 !my-5">
           <h1 className="text-2xl 2xl:text-4xl font-semibold">
             Technical <span className="text-amber-500">Skills</span>
           </h1>
@@ -222,9 +222,78 @@ const PrantoPortfolio = () => {
               GIT & GITHUB
             </span>
           </div>
-            <span className=" !p-2 rounded-4xl text-center font-bold bg-gray-300 !m-2 border border-white hover:border-amber-600 hover:bg-amber-100">
-              STRIPE INTEGRARION
-            </span>
+          <span className=" !p-2 rounded-4xl text-center font-bold bg-gray-300 !m-2 border border-white hover:border-amber-600 hover:bg-amber-100">
+            STRIPE INTEGRARION
+          </span>
+        </div>
+      </div>
+
+      {/* Educational Qualifications */}
+      <div>
+        <h1 className="text-3xl 2xl:text-5xl text-center font-semibold">
+          {" "}
+          <span className="text-amber-500">Educational</span> Qualifications
+        </h1>
+        <p className="text-gray-600 text-lg 2xl:text-xl text-center !my-2">
+          My educational background and certifications
+        </p>
+
+        <div>
+          <div className="w-[93%] lg:w-[85%] xl:w-[78%] 2xl:w-[70%] border !mx-auto !p-2 lg:!p-7 rounded-lg border-amber-400 hover:border-amber-600 shadow-lg gap-5 !my-5 text-center md:text-left">
+            <h1 className="text-[16px] lg:text-lg 2xl:text-2xl font-semibold">
+              Diploma In Computer Science and Technology --{" "}
+              <span className="font-semibold">Session 22-23</span>
+            </h1>
+            <h3 className="text-[15px] 2xl:text-lg text-gray-500 !my-1">
+              Bogura Polytechnic Institute --{" "}
+              <span className="text-black font-semibold">2023-2026</span>
+            </h3>
+            <h3 className="!my-1 2xl:text-[16px]">CGPA : Loading....</h3>
+            <p className="2xl:text-[15px]">
+              Studying Diploma in Computer Science and Technology with a focus
+              on practical programming, software development, and modern
+              computing skills.
+            </p>
+          </div>
+
+          {/*  */}
+          <div className="w-[93%] lg:w-[85%] xl:w-[78%] 2xl:w-[70%] border !mx-auto !p-2 lg:!p-7 rounded-lg border-amber-400 hover:border-amber-600 shadow-lg gap-5 !my-5 text-center md:text-left">
+            <h1 className="text-[16px] lg:text-lg 2xl:text-2xl font-semibold">
+              Complete Web Development --{" "}
+              <span className="font-semibold">2025</span>
+            </h1>
+            <h3 className="text-[15px] 2xl:text-lg text-gray-500 !my-1">
+              Programming Hero --{" "}
+              <span className="text-black font-semibold">Batch 11</span>
+            </h3>
+            <a
+              href="https://i.ibb.co.com/V0s0M01Z/PH-Hero-Course-certificate.jpg"
+              target="_blank"
+              className="!my-1 2xl:text-[16px] text-amber-500 font-semibold underline block"
+            >
+              My Certificate
+            </a>
+            <p className="2xl:text-[15px]">
+              Trained in MERN Stack Web Development at Programming Hero with
+              practical experience in creating dynamic, full-stack web projects.
+            </p>
+          </div>
+
+          {/*  */}
+          <div className="w-[93%] lg:w-[85%] xl:w-[78%] 2xl:w-[70%] border !mx-auto !p-2 lg:!p-7 rounded-lg border-amber-400 hover:border-amber-600 shadow-lg gap-5 !my-5 text-center md:text-left">
+            <h1 className="text-[16px] lg:text-lg 2xl:text-2xl font-semibold">
+              Secondary School Certificate{" "}
+            </h1>
+            <h3 className="text-[15px] 2xl:text-lg text-gray-500 !my-1">
+              Beraiderchala Ideal School --{" "}
+              <span className="text-black font-semibold">2022</span>
+            </h3>
+            <h3 className="!my-1 2xl:text-[16px]">GPA : 5 out of 5</h3>
+            <p className="2xl:text-[15px]">
+              Finished high school with excellent results in Science, building
+              solid knowledge in math, physics, and technology.
+            </p>
+          </div>
         </div>
       </div>
     </div>
