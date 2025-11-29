@@ -173,6 +173,60 @@ const PrantoPortfolio = () => {
           </div>
         </div>
       </div>
+
+      {/* Content for My Skills section goes here */}
+      <div className="lg:w-[85%] xl:w-[90%] 2xl:w-[78%] !p-5 lg:!p-20 !mx-auto !mb-10">
+        <h1 className="text-3xl 2xl:text-5xl text-center font-semibold">
+          My <span className="text-amber-500">Skills</span>
+        </h1>
+        <p className="text-gray-600 text-lg 2xl:text-xl text-center !my-2">
+          Technologies and expertise I bring to the table
+        </p>
+        {/*  */}
+        <div className="border w-[95%] !mx-auto !p-5 lg:!p-10 mt-5 rounded-lg border-amber-400 hover:border-amber-600 shadow-lg gap-5 !my-5">
+          <h1 className="text-2xl 2xl:text-4xl font-semibold">
+            Technical <span className="text-amber-500">Skills</span>
+          </h1>
+          <div className="flex flex-wrap !mb-5 !mt-2">
+            <span className=" !p-2 rounded-4xl text-center font-bold bg-gray-300 !m-2 border border-white hover:border-amber-600 hover:bg-amber-100">
+              HTML5
+            </span>
+            <span className=" !p-2 rounded-4xl text-center font-bold bg-gray-300 !m-2 border border-white hover:border-amber-600 hover:bg-amber-100">
+              CSS3
+            </span>
+            <span className=" !p-2 rounded-4xl text-center font-bold bg-gray-300 !m-2 border border-white hover:border-amber-600 hover:bg-amber-100">
+              JAVASCRIPT (ES6+)
+            </span>
+            <span className=" !p-2 rounded-4xl text-center font-bold bg-gray-300 !m-2 border border-white hover:border-amber-600 hover:bg-amber-100">
+              REACT.JS
+            </span>
+            <span className=" !p-2 rounded-4xl text-center font-bold bg-gray-300 !m-2 border border-white hover:border-amber-600 hover:bg-amber-100">
+              NODE.JS
+            </span>
+            <span className=" !p-2 rounded-4xl text-center font-bold bg-gray-300 !m-2 border border-white hover:border-amber-600 hover:bg-amber-100">
+              EXPRESS.JS
+            </span>
+            <span className=" !p-2 rounded-4xl text-center font-bold bg-gray-300 !m-2 border border-white hover:border-amber-600 hover:bg-amber-100">
+              MONGODB
+            </span>
+            <span className=" !p-2 rounded-4xl text-center font-bold bg-gray-300 !m-2 border border-white hover:border-amber-600 hover:bg-amber-100">
+              FIREBASE
+            </span>
+            <span className=" !p-2 rounded-4xl text-center font-bold bg-gray-300 !m-2 border border-white hover:border-amber-600 hover:bg-amber-100">
+              TAILWINDCSS
+            </span>
+            <span className=" !p-2 rounded-4xl text-center font-bold bg-gray-300 !m-2 border border-white hover:border-amber-600 hover:bg-amber-100">
+              DAISYUI
+            </span>
+            <span className=" !p-2 rounded-4xl text-center font-bold bg-gray-300 !m-2 border border-white hover:border-amber-600 hover:bg-amber-100">
+              GIT & GITHUB
+            </span>
+          </div>
+            <span className=" !p-2 rounded-4xl text-center font-bold bg-gray-300 !m-2 border border-white hover:border-amber-600 hover:bg-amber-100">
+              STRIPE INTEGRARION
+            </span>
+        </div>
+      </div>
     </div>
   );
 };
