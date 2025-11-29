@@ -76,12 +76,29 @@ const PrantoPortfolio = () => {
             <div className="!mt-6 flex justify-center lg:justify-start gap-4">
               <button
                 className="border-1 !p-2 text-white bg-amber-500 rounded-md hover:bg-amber-600 text-md cursor-pointer"
-                onClick={() =>
-                  window.scrollTo({ top: 2700, behavior: "smooth" })
-                }
+                onClick={() => {
+                  let scrollValue = 0;
+
+                  if (window.innerWidth < 640) {
+                    // Mobile
+                    scrollValue = 2470;
+                  } else if (window.innerWidth < 1024) {
+                    // Tablet
+                    scrollValue = 1900;
+                  } else if (window.innerWidth < 1300) {
+                    // Laptop
+                    scrollValue = 2580;
+                  } else {
+                    // Desktop
+                    scrollValue = 2700;
+                  }
+
+                  window.scrollTo({ top: scrollValue, behavior: "smooth" });
+                }}
               >
                 View my work
               </button>
+
               <button className="border-1 !p-2 text-white bg-amber-500 rounded-md hover:bg-amber-600 text-md cursor-pointer">
                 <a
                   href="https://drive.google.com/uc?export=download&id=1OWHf6I_G3RAD_NABxb7NAZ_piajWv6UH"
