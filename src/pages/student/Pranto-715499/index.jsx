@@ -296,6 +296,137 @@ const PrantoPortfolio = () => {
           </div>
         </div>
       </div>
+
+      {/* Featured Projects */}
+      <div className="lg:w-[85%] xl:w-[95%] !p-5 lg:!p-20 !mx-auto !mb-10">
+        <h1 className="text-3xl 2xl:text-5xl text-center font-semibold">
+          Featured <span className="text-amber-500">Projects</span>
+        </h1>
+        <p className="text-gray-600 text-lg 2xl:text-xl text-center !my-2">
+          Explore some of my favorite works built with modern web technologies.
+        </p>
+        <div className="!my-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5 justify-items-center">
+            {/* Projects no 01 */}
+            <div className="rounded-2xl bg-base-100 2xl:w-96 h-[375px] shadow-2xl">
+              <figure>
+                <img
+                  className="rounded-t-2xl h-[185px]"
+                  src="https://i.ibb.co.com/0p5S0kTP/Screenshot-2025-10-15-221609.jpg"
+                  alt="Image"
+                />
+              </figure>
+              <div className="!px-5">
+                <h2 className="!py-1 text-2xl font-semibold">Tap&Earn</h2>
+                <p className="!py-1 text-[16px]">
+                  Tap&Earn is a multitasking web application, where user can
+                  earn money by completing task
+                </p>
+                <div className="md:!mt-8 lg:!mt-0 2xl:!mt-5">
+                  <a
+                    className=""
+                    href="https://tap-and-earn-258dd.web.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="border-1 font-bold !my-2 !p-1 !text-white !bg-amber-500 rounded-md hover:!bg-amber-600 text-lg cursor-pointer w-full">
+                      Live Site
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            {/* Project no 02 */}
+            <div className="rounded-2xl bg-base-100 2xl:w-96 h-[375px] shadow-2xl ">
+              <figure>
+                <img
+                  className="rounded-t-2xl"
+                  src="https://i.ibb.co.com/KzL9JSHz/Screenshot-2025-10-17-181528.jpg"
+                  alt="Image"
+                />
+              </figure>
+              <div className="!px-5">
+                <h2 className="!py-1 text-2xl font-semibold">
+                  Artifacts Gallery
+                </h2>
+                <p className="!py-1 text-[16px]">
+                  Artifacts Gallery is a web application where user can find
+                  Artifacts and explore them.Also a user can add artifacts there
+                </p>
+                <div className="lg:!mt-6 2xl:!mt-0">
+                  <a
+                    className=""
+                    href="https://artifacts-gallery.web.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="border-1 font-bold !my-2 !p-1 !text-white !bg-amber-500 rounded-md hover:!bg-amber-600 text-lg cursor-pointer w-full">
+                      Live Site
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            {/* Project no 03 */}
+            <div className="rounded-2xl bg-base-100 2xl:w-96 h-[375px] shadow-2xl ">
+              <figure>
+                <img
+                  className="rounded-t-2xl  "
+                  src="https://i.ibb.co.com/6c2ZBFH7/Screenshot-2025-10-17-181839.jpg"
+                  alt="Image"
+                />
+              </figure>
+              <div className="!px-5">
+                <h2 className="!py-1 text-2xl font-semibold">Plant Care</h2>
+                <p className="!py-1 text-[16px]">
+                  Plant Care is a Web application based on Plant. User Can add
+                  plant here and maintain the palnts
+                </p>
+                <div className="!mt-4">
+                  <a
+                    className=""
+                    href="https://plant-care-web.web.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="border-1 font-bold !my-2 !p-1 !text-white !bg-amber-500 rounded-md hover:!bg-amber-600 text-lg cursor-pointer w-full">
+                      Live Site
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            {/* Project no 04 */}
+            <div className="rounded-2xl bg-base-100 2xl:w-96 h-[375px] shadow-2xl ">
+              <figure>
+                <img
+                  className="rounded-t-2xl"
+                  src="https://i.ibb.co.com/9kMZqhDg/Screenshot-2025-10-17-182216.jpg"
+                  alt="Image"
+                />
+              </figure>
+              <div className="!px-5">
+                <h2 className="!py-1 text-2xl font-semibold">Event Explorer</h2>
+                <p className="!py-1 text-[16px]">
+                  Here User can explore events
+                </p>
+                <div className="!mt-10">
+                  <a
+                    className=""
+                    href="https://event-explorer-91189.web.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="border-1 font-bold !my-2 !p-1 !text-white !bg-amber-500 rounded-md hover:!bg-amber-600 text-lg cursor-pointer w-full">
+                      Live Site
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
