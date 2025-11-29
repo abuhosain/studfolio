@@ -77,7 +77,7 @@ const PrantoPortfolio = () => {
               <button
                 className="border-1 !p-2 text-white bg-amber-500 rounded-md hover:bg-amber-600 text-md cursor-pointer"
                 onClick={() =>
-                  window.scrollTo({ top: 500, behavior: "smooth" })
+                  window.scrollTo({ top: 2700, behavior: "smooth" })
                 }
               >
                 View my work
@@ -427,6 +427,79 @@ const PrantoPortfolio = () => {
           </div>
         </div>
       </div>
+
+      {/* Contacts section */}
+      <div>
+        <h1 className="text-3xl 2xl:text-5xl text-center font-semibold">
+          Let't <span className="text-amber-500">Connect</span>
+        </h1>
+        <p className="text-gray-600 text-lg 2xl:text-xl text-center !my-2">
+          I'm always open to new opportunities and collaborations. Let's create{" "}
+          <br className="hidden md:block" />
+          something amazing together! 💬
+        </p>
+        <div className="!my-15">
+          <div className="bg-white w-[350px] md:w-[500px] !mx-auto rounded-2xl border !p-5 md:!p-10 text-lg md:text-xl border-amber-400 hover:border-amber-600 shadow-2xl ">
+            <h2>
+              Email :{" "}
+              <span className="font-semibold">prantokumar3463@gmail.com</span>
+            </h2>
+            <h2>
+              Phone : <span className="font-semibold">+880 1717-843463</span>
+            </h2>
+            <h2>
+              Location :{" "}
+              <span className="font-semibold">Dhaka, Bangladesh</span>
+            </h2>
+            <div className="flex !mt-5 gap-3">
+              <a
+                href="https://www.linkedin.com/in/pranto-kumar-/"
+                target="_blank"
+              >
+                <img
+                  className="w-20"
+                  src="https://i.ibb.co.com/N2QMmYdD/linkedin-removebg.png"
+                  alt="LinkedIn"
+                />
+              </a>
+              <a href="https://github.com/SKMPranto" target="_blank">
+                <img
+                  className="w-20 !mt-1 md:!ml-2"
+                  src="https://i.ibb.co.com/0pSf3LTt/github-removebg.png"
+                  alt="Github"
+                />
+              </a>
+              <a
+                href="https://www.facebook.com/skpranto.skpranto.71"
+                target="_blank"
+              >
+                <img
+                  className="w-11 !my-2 md:!ml-9"
+                  src="https://i.ibb.co.com/20ThQvrG/Facebook.png"
+                  alt="Facebook"
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/s_pranto_kumar/?hl=en"
+                target="_blank"
+              >
+                <img
+                  className="w-11 !mt-2 !ml-5 md:!ml-15"
+                  src="https://i.ibb.co.com/1tXGG5ZB/insta-removebg.png"
+                  alt="Instagram"
+                />
+              </a>
+            </div>
+            <aside className="text-sm text-center !mt-10 text-gray-500">
+              <p>
+                Copyright © {new Date().getFullYear()} - All right reserved
+                Pranto Kumar jr.MERN Stack Developer
+              </p>
+            </aside>
+          </div>
+        </div>
+      </div>
+      {/* End */}
     </div>
   );
 };
