@@ -104,12 +104,102 @@ const FerdousPortfolio = () => {
         </div>
 
         {/* Projects section */}
+        <section class="max-w-7xl !mx-auto !mt-20 md:!mt-0 !mb-30 lg:!mb-45 !px-4">
+          <div class="text-center !mb-12">
+            <h5 className="md:text-lg font-semibold text-gray-500">
+              Browse My Recent Works
+            </h5>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">
+              Projects
+            </h1>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 ">
+            {/* CARD 1 */}
+            <article class="border rounded-3xl shadow-md !p-6 flex flex-col items-center text-center !mb-6">
+              <img
+                src="https://i.ibb.co/hxwDnHFY/nature-s-platter.jpg"
+                class="rounded-xl !w-full !h-60 object-fit !mb-5"
+                alt="Project Image"
+              />
+
+              <h2 class="text-xl font-bold !mb-6 leading-tight">
+                Nature's <br /> Platter
+              </h2>
+
+              <div class="flex gap-4 !mt-2">
+                <a
+                  target="_blank"
+                  href="https://skmpranto.github.io/B11A03-Category-0002/"
+                  class="border !px-6 !py-2 rounded-full font-medium hover:bg-black hover:text-white transition"
+                >
+                  Live Demo
+                </a>
+              </div>
+            </article>
+
+            {/* <!-- CARD 2 --> */}
+            <article class="border rounded-3xl shadow-md !p-6 flex flex-col items-center text-center !mb-6">
+              <img
+                src="https://i.ibb.co/S7WVVSyM/English-Janala.jpg"
+                class="rounded-xl !w-full !h-60 object-cover !mb-5"
+                alt="Project Image"
+              />
+
+              <h2 class="text-xl font-bold !mb-6 leading-tight">
+                English <br /> Janala
+              </h2>
+
+              <div class="flex gap-4 !mt-2">
+                <a
+                  target="_blank"
+                  href="https://assignment-006-b11a6.netlify.app/"
+                  class="border !px-6 !py-2 rounded-full font-medium hover:bg-black hover:text-white transition"
+                >
+                  Live Demo
+                </a>
+              </div>
+            </article>
+
+            {/* <!-- CARD 3 --> */}
+            <article class="border rounded-3xl shadow-md !p-6 flex flex-col items-center text-center !mb-6">
+              <img
+                src="https://i.ibb.co/ZpNBDKWB/Auction-Gallery.jpg"
+                class="rounded-xl !w-full !h-60 object-cover !mb-5"
+                alt="Project Image"
+              />
+
+              <h2 class="text-xl font-bold !mb-6 leading-tight">
+                Auction <br /> Gallery
+              </h2>
+
+              <div class="flex gap-4 !mt-2">
+                <a
+                  target="_blank"
+                  href="https://assignment-007-b11a7.netlify.app/"
+                  class="border !px-6 !py-2 rounded-full font-medium hover:bg-black hover:text-white transition"
+                >
+                  Live Demo
+                </a>
+              </div>
+            </article>
+          </div>
+          <img
+            className="!mx-auto !mt-2 md:!mt-0 lg:!mt-10 2xl:!mt-20"
+            src="https://i.ibb.co/67mcvcZR/downarrow-removebg.png"
+            alt="Image"
+          />
+        </section>
 
         {/* Contact Section */}
-        <div className="!mt-20 md:!mt-0 md:min-h-screen !pb-20 !px-4 ">
+        <div className="!mt-20 md:!mt-0 md:min-h-screen !pb-20 !px-4">
           <div className="text-center">
-            <h4 className="md:text-lg font-semibold text-gray-500">Get in Touch</h4>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">Contact Me</h1>
+            <h4 className="md:text-lg font-semibold text-gray-500">
+              Get in Touch
+            </h4>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">
+              Contact Me
+            </h1>
           </div>
           <div className="max-w-3xl !mx-auto !mt-10 !p-6 rounded-3xl shadow-lg border border-gray-200">
             {/* <!-- Row 1 --> */}
@@ -190,7 +280,7 @@ const FerdousPortfolio = () => {
               Send Message
             </button>
           </div>
-                    <img
+          <img
             className="!mx-auto !mt-10 md:!mt-20 lg:!mt-15 2xl:!mt-20"
             src="https://i.ibb.co/67mcvcZR/downarrow-removebg.png"
             alt="Image"
