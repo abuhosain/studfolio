@@ -102,6 +102,100 @@ const FerdousPortfolio = () => {
             alt="Image"
           />
         </div>
+
+        {/* Projects section */}
+
+        {/* Contact Section */}
+        <div className="!mt-20 md:!mt-0 md:min-h-screen !pb-20 !px-4 ">
+          <div className="text-center">
+            <h4 className="md:text-lg font-semibold text-gray-500">Get in Touch</h4>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">Contact Me</h1>
+          </div>
+          <div className="max-w-3xl !mx-auto !mt-10 !p-6 rounded-3xl shadow-lg border border-gray-200">
+            {/* <!-- Row 1 --> */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+              {/* Salutation */}
+              <div className="flex flex-col">
+                <label className="text-sm font-semibold !mb-1">
+                  Salutation
+                </label>
+                <select className="border border-gray-300 rounded-lg !p-3 outline-none focus:ring-2 focus:ring-black/40">
+                  <option>Mr.</option>
+                  <option>Ms.</option>
+                  <option>Mrs.</option>
+                  <option>Dr.</option>
+                </select>
+              </div>
+
+              {/* <!-- First Name --> */}
+              <div class="flex flex-col">
+                <label class="text-sm font-semibold !mb-1">First Name</label>
+                <input
+                  type="text"
+                  class="border border-gray-300 rounded-lg !p-3 outline-none focus:ring-2 focus:ring-black/40"
+                />
+              </div>
+            </div>
+
+            {/* <!-- Row 2 --> */}
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5 !mt-5">
+              <div class="flex flex-col">
+                <label class="text-sm font-semibold !mb-1">Last Name</label>
+                <input
+                  type="text"
+                  class="border border-gray-300 rounded-lg !p-3 outline-none focus:ring-2 focus:ring-black/40"
+                />
+              </div>
+
+              <div class="flex flex-col">
+                <label class="text-sm font-semibold !mb-1">Email</label>
+                <input
+                  type="email"
+                  class="border border-gray-300 rounded-lg !p-3 outline-none focus:ring-2 focus:ring-black/40"
+                />
+              </div>
+            </div>
+
+            {/* <!-- Row 3 --> */}
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5 !mt-5">
+              <div class="flex flex-col">
+                <label class="text-sm font-semibold !mb-1">Company</label>
+                <input
+                  type="text"
+                  class="border border-gray-300 rounded-lg !p-3 outline-none focus:ring-2 focus:ring-black/40"
+                />
+              </div>
+
+              <div class="flex flex-col">
+                <label class="text-sm font-semibold !mb-1">Mobile</label>
+                <input
+                  type="text"
+                  class="border border-gray-300 rounded-lg !p-3 outline-none focus:ring-2 focus:ring-black/40"
+                />
+              </div>
+            </div>
+
+            {/* <!-- Message --> */}
+            <div class="!mt-5">
+              <label class="text-sm font-semibold !mb-1">Message</label>
+              <textarea
+                rows="4"
+                class="border border-gray-300 rounded-lg !p-3 w-full outline-none focus:ring-2 focus:ring-black/40"
+                placeholder="Tell me about your project, timeline, or how I can help."
+              ></textarea>
+            </div>
+
+            {/* <!-- Button --> */}
+            <button class="!mt-6 !px-6 !py-3 bg-black text-white rounded-full hover:bg-black/80 transition cursor-pointer">
+              Send Message
+            </button>
+          </div>
+                    <img
+            className="!mx-auto !mt-10 md:!mt-20 lg:!mt-15 2xl:!mt-20"
+            src="https://i.ibb.co/67mcvcZR/downarrow-removebg.png"
+            alt="Image"
+          />
+        </div>
       </div>
     </div>
   );
