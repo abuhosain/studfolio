@@ -24,7 +24,7 @@ const FerdousPortfolio = () => {
               <a href="#" target="_blank" rel="noopener noreferrer">
                 <img
                   className="w-20"
-                  src="https://i.ibb.co/0pSf3LTt/github-removebg.png"
+                  src="https://i.ibb.co.com/0pSf3LTt/github-removebg.png"
                   alt="Image"
                 />
               </a>
@@ -35,7 +35,7 @@ const FerdousPortfolio = () => {
               >
                 <img
                   className="w-10"
-                  src="https://i.ibb.co/20ThQvrG/Facebook.png"
+                  src="https://i.ibb.co.com/20ThQvrG/Facebook.png"
                   alt="Image"
                 />
               </a>
@@ -107,7 +107,7 @@ const FerdousPortfolio = () => {
         <section class="max-w-7xl !mx-auto !mt-20 md:!mt-0 !mb-30 lg:!mb-45 !px-4">
           <div class="text-center !mb-12">
             <h5 className="md:text-lg font-semibold text-gray-500">
-              Browse My Recent Works
+              Browse My Recent
             </h5>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">
               Projects
