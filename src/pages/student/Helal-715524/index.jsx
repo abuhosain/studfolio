@@ -45,16 +45,16 @@ const projects = [
 ];
 
 const socialLinks = [
-    { label: 'Facebook', href: 'https://facebook.com/helal.edits', icon: FaFacebookF },
-    { label: 'Instagram', href: 'https://instagram.com/helal.edits', icon: FaInstagram },
-    { label: 'LinkedIn', href: 'https://linkedin.com/in/helalhosen', icon: FaLinkedinIn },
-    { label: 'Portfolio', href: 'https://helal-edits.com', icon: FaGlobe },
+    { label: 'Facebook', href: 'https://www.facebook.com/mdhelal.hossen.37051', icon: FaFacebookF },
+    { label: 'Instagram', href: 'https://www.instagram.com/helal_4103?igsh=Y3pvbXA1NHZvbWVq', icon: FaInstagram },
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/md-helal-hossen-59aa82318/', icon: FaLinkedinIn },
+    { label: 'Portfolio', href: 'https://helalhossen.com', icon: FaGlobe },
 ];
 
 const contactInfo = [
-    { label: 'Email', value: 'helal.edits@gmail.com', href: 'mailto:helal.edits@gmail.com' },
-    { label: 'LinkedIn', value: 'linkedin.com/in/helalhosen', href: 'https://linkedin.com/in/helalhosen' },
-    { label: 'Instagram', value: '@helal.edits', href: 'https://instagram.com/helal.edits' },
+    { label: 'Email', value: 'mdhelalhossen4103@gmail.com', href: 'mdhelalhossen4103@gmail.com' },
+    { label: 'LinkedIn', value: 'https://www.linkedin.com/in/md-helal-hossen-59aa82318/', href: 'https://www.linkedin.com/in/md-helal-hossen-59aa82318/' },
+    { label: 'Instagram', value: 'https://www.instagram.com/helal_4103?igsh=Y3pvbXA1NHZvbWVq', href: 'https://www.instagram.com/helal_4103?igsh=Y3pvbXA1NHZvbWVq' },
 ];
 
 const HelalProfile = () => (
@@ -224,9 +224,7 @@ const HelalProfile = () => (
                 .section-card {
                     padding: 24px;
                 }
-                .cta-group {
-                    flex-direction: column;
-                }
+               
             }
         `}</style>
         <div className="helal-page">
@@ -236,13 +234,10 @@ const HelalProfile = () => (
                         <p className="stat-label" style={{ color: '#fbcfe8' }}>Video Storyteller</p>
                         <h1 className="hero-title">Helal Hosen</h1>
                         <p>
-                            Video editor at NeexG Agency and Computer Science & Technology student (Roll 715524 · Reg 1502248893).
+                            Video editor at NeexG Agency and Computer Science & Technology student <br /> (Roll 715524 · Reg 1502248901).
                             I craft fast-paced trailers, branded shorts, and documentary-style edits that keep viewers watching.
                         </p>
-                        <div className="cta-group">
-                            <a className="cta primary" href="#projects">Latest Cuts</a>
-                            <a className="cta secondary" href="#contact">Contact</a>
-                        </div>
+                        
                     </div>
                     <div className="profile-card">
                         <img
