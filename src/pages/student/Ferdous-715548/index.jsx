@@ -8,7 +8,7 @@ const FerdousPortfolio = () => {
         <div className="flex flex-col md:flex-row items-center justify-center md:min-h-screen text-center gap-6 2xl:gap-x-30 !p-4">
           <img
             className="h-96 2xl:h-[500px]"
-            src="https://i.ibb.co/Q79mHYS0/Freepik.jpg"
+            src="https://i.ibb.co.com/Q79mHYS0/Freepik.jpg"
             alt="Image"
           />
           <div>
@@ -24,7 +24,7 @@ const FerdousPortfolio = () => {
               <a href="#" target="_blank" rel="noopener noreferrer">
                 <img
                   className="w-20"
-                  src="https://i.ibb.co/0pSf3LTt/github-removebg.png"
+                  src="https://i.ibb.co.com/0pSf3LTt/github-removebg.png"
                   alt="Image"
                 />
               </a>
@@ -35,7 +35,7 @@ const FerdousPortfolio = () => {
               >
                 <img
                   className="w-10"
-                  src="https://i.ibb.co/20ThQvrG/Facebook.png"
+                  src="https://i.ibb.co.com/20ThQvrG/Facebook.png"
                   alt="Image"
                 />
               </a>
@@ -92,13 +92,13 @@ const FerdousPortfolio = () => {
             </div>
             <img
               className="w-64 md:w-76 lg:w-80 rounded-4xl md:!mb-8"
-              src="https://i.ibb.co/6JTNxP0f/avatar.jpg"
+              src="https://i.ibb.co.com/6JTNxP0f/avatar.jpg"
               alt="Image"
             />
           </div>
           <img
             className="!mx-auto !mt-2 md:!mt-20 lg:!mt-0 2xl:!mt-20"
-            src="https://i.ibb.co/67mcvcZR/downarrow-removebg.png"
+            src="https://i.ibb.co.com/67mcvcZR/downarrow-removebg.png"
             alt="Image"
           />
         </div>
@@ -107,7 +107,7 @@ const FerdousPortfolio = () => {
         <section class="max-w-7xl !mx-auto !mt-20 md:!mt-0 !mb-30 lg:!mb-45 !px-4">
           <div class="text-center !mb-12">
             <h5 className="md:text-lg font-semibold text-gray-500">
-              Browse My Recent Works
+              Browse My Recent
             </h5>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">
               Projects
@@ -118,7 +118,7 @@ const FerdousPortfolio = () => {
             {/* CARD 1 */}
             <article class="border rounded-3xl shadow-md !p-6 flex flex-col items-center text-center !mb-6">
               <img
-                src="https://i.ibb.co/hxwDnHFY/nature-s-platter.jpg"
+                src="https://i.ibb.co.com/hxwDnHFY/nature-s-platter.jpg"
                 class="rounded-xl !w-full !h-60 object-fit !mb-5"
                 alt="Project Image"
               />
@@ -141,7 +141,7 @@ const FerdousPortfolio = () => {
             {/* <!-- CARD 2 --> */}
             <article class="border rounded-3xl shadow-md !p-6 flex flex-col items-center text-center !mb-6">
               <img
-                src="https://i.ibb.co/S7WVVSyM/English-Janala.jpg"
+                src="https://i.ibb.co.com/S7WVVSyM/English-Janala.jpg"
                 class="rounded-xl !w-full !h-60 object-cover !mb-5"
                 alt="Project Image"
               />
@@ -164,7 +164,7 @@ const FerdousPortfolio = () => {
             {/* <!-- CARD 3 --> */}
             <article class="border rounded-3xl shadow-md !p-6 flex flex-col items-center text-center !mb-6">
               <img
-                src="https://i.ibb.co/ZpNBDKWB/Auction-Gallery.jpg"
+                src="https://i.ibb.co.com/ZpNBDKWB/Auction-Gallery.jpg"
                 class="rounded-xl !w-full !h-60 object-cover !mb-5"
                 alt="Project Image"
               />
@@ -186,7 +186,7 @@ const FerdousPortfolio = () => {
           </div>
           <img
             className="!mx-auto !mt-2 md:!mt-0 lg:!mt-10 2xl:!mt-20"
-            src="https://i.ibb.co/67mcvcZR/downarrow-removebg.png"
+            src="https://i.ibb.co.com/67mcvcZR/downarrow-removebg.png"
             alt="Image"
           />
         </section>
@@ -282,7 +282,7 @@ const FerdousPortfolio = () => {
           </div>
           <img
             className="!mx-auto !mt-10 md:!mt-20 lg:!mt-15 2xl:!mt-20"
-            src="https://i.ibb.co/67mcvcZR/downarrow-removebg.png"
+            src="https://i.ibb.co.com/67mcvcZR/downarrow-removebg.png"
             alt="Image"
           />
         </div>
