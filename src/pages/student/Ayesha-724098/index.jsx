@@ -1,44 +1,63 @@
-import React from 'react';
+import React from "react";
 
 const highlights = [
-    { label: 'Roll', value: '724098' },
-    { label: 'Reg', value: '1502254520' },
-    { label: 'Discipline', value: 'Graphics Design' },
+  { label: "Roll", value: "724098" },
+  { label: "Reg", value: "1502254520" },
+  { label: "Discipline", value: "Graphics Design" },
 ];
 
 const sparks = [
-    'Brand systems & guidelines',
-    'Creative direction for social',
-    'Print & packaging mockups',
-    'UI mood boards & prototypes',
+  "Brand systems & guidelines",
+  "Creative direction for social",
+  "Print & packaging mockups",
+  "UI mood boards & prototypes",
 ];
 
 const projects = [
-    {
-        title: 'Lumen Festival',
-        note: 'Poster suite + animated teaser frames for an immersive art event.',
-    },
-    {
-        title: 'Bloom Botanicals',
-        note: 'Logo refresh with palette exploration for a minimalist skincare line.',
-    },
-    {
-        title: 'Wildcrafted',
-        note: 'Packaging concept photographed & composited for a boutique tea brand.',
-    },
+  {
+    title: "Lumen Festival",
+    note: "Poster suite + animated teaser frames for an immersive art event.",
+  },
+  {
+    title: "Bloom Botanicals",
+    note: "Logo refresh with palette exploration for a minimalist skincare line.",
+  },
+  {
+    title: "Wildcrafted",
+    note: "Packaging concept photographed & composited for a boutique tea brand.",
+  },
 ];
 
-const tools = ['Photoshop', 'Illustrator', 'Figma', 'Blender', 'Lightroom', 'InDesign'];
+const tools = [
+  "Photoshop",
+  "Illustrator",
+  "Figma",
+  "Blender",
+  "Lightroom",
+  "InDesign",
+];
 
 const contact = [
-    { label: 'Email', value: 'ayesha.designs@gmail.com', href: 'mailto:ayesha.designs@gmail.com' },
-    { label: 'Behance', value: 'behance.net/ayesha', href: 'https://behance.net/ayesha' },
-    { label: 'Portfolio', value: 'ayesha-creative.com', href: 'https://ayesha-creative.com' },
+  {
+    label: "Email",
+    value: "ayesha.designs@gmail.com",
+    href: "mailto:ayesha.designs@gmail.com",
+  },
+  {
+    label: "Behance",
+    value: "behance.net/ayesha",
+    href: "https://behance.net/ayesha",
+  },
+  {
+    label: "Portfolio",
+    value: "ayesha-creative.com",
+    href: "https://ayesha-creative.com",
+  },
 ];
 
 const AyeshaPortfolio = () => (
-    <>
-        <style>{`
+  <>
+    <style>{`
             .ayesha-wrap {
                 min-height: 100vh;
                 padding: 48px 18px 64px;
@@ -239,112 +258,121 @@ const AyeshaPortfolio = () => (
                 }
             }
         `}</style>
-        <main className="ayesha-wrap">
-            <div className="ayesha-grid">
-                <section className="hero-sheet">
-                    <div className="hero-left">
-                        <p className="hero-sub">Graphics Designer</p>
-                        <h1 className="hero-title">Ayesha Sultana</h1>
-                        <p className="hero-bio">
-                            Crafting tactile stories with gradients, texture, and type. Pairing brand strategy with
-                            playful experimentation for prints, posts, and digital moods.
-                        </p>
-                        <div className="hero-tags">
-                            {highlights.map((item) => (
-                                <span key={item.label}>
-                                    {item.label}: {item.value}
-                                </span>
-                            ))}
-                        </div>
-                    </div>
-                    <div className="hero-right">
-                        <div className="hero-badge" aria-hidden="true">
-                            ✦
-                        </div>
-                        <p>Chittagong, Bangladesh</p>
-                        <div className="hero-links">
-                            <a href="#projects">Case Studies</a>
-                            <a href="#contact">Say Hi</a>
-                        </div>
-                    </div>
-                </section>
-
-                <section className="info-grid">
-                    <div className="info-card">
-                        <h4>What sparks joy</h4>
-                        <div className="spark-list">
-                            {sparks.map((item) => (
-                                <div key={item}>• {item}</div>
-                            ))}
-                        </div>
-                    </div>
-                    <div className="info-card">
-                        <h4>Tools & textures</h4>
-                        <div className="tools-list">
-                            {tools.map((tool) => (
-                                <span key={tool}>{tool}</span>
-                            ))}
-                        </div>
-                    </div>
-                    <div className="info-card">
-                        <h4>Currently exploring</h4>
-                        <p style={{ marginTop: '12px', color: '#5c4b43' }}>
-                            The intersection of 3D fabrics, gentle gradients, and tactile typography.
-                        </p>
-                    </div>
-                </section>
-
-                <section className="glass" id="projects">
-                    <h2 className="section-heading">Selected Works</h2>
-                    <div className="project-board">
-                        {projects.map((project) => (
-                            <div key={project.title} className="project-row">
-                                <h3>{project.title}</h3>
-                                <p>{project.note}</p>
-                            </div>
-                        ))}
-                    </div>
-                </section>
-
-                <section className="glass">
-                    <h2 className="section-heading">Highlights</h2>
-                    <div className="highlight-grid">
-                        <div className="highlight-card">
-                            <strong>Freelance Designer · 2 yrs</strong>
-                            <p style={{ marginTop: '8px', color: '#6f5a50' }}>
-                                Packaging, social kits, and pitch visuals for local founders.
-                            </p>
-                        </div>
-                        <div className="highlight-card">
-                            <strong>Design Club Lead · BPI</strong>
-                            <p style={{ marginTop: '8px', color: '#6f5a50' }}>
-                                Hosting critiques, hands-on workshops, and brand jams.
-                            </p>
-                        </div>
-                        <div className="highlight-card">
-                            <strong>Adobe Certified Professional</strong>
-                            <p style={{ marginTop: '8px', color: '#6f5a50' }}>Illustrator + Photoshop tracks.</p>
-                        </div>
-                    </div>
-                </section>
-
-                <section className="glass" id="contact">
-                    <h2 className="section-heading">Let’s build together</h2>
-                    <div className="contact-strip">
-                        {contact.map((item) => (
-                            <div key={item.label} className="contact-card">
-                                <p style={{ letterSpacing: '0.2em', textTransform: 'uppercase', fontSize: '12px', color: '#a87c69' }}>
-                                    {item.label}
-                                </p>
-                                <a href={item.href}>{item.value}</a>
-                            </div>
-                        ))}
-                    </div>
-                </section>
+    <main className="ayesha-wrap">
+      <div className="ayesha-grid">
+        <section className="hero-sheet">
+          <div className="hero-left">
+            <p className="hero-sub">Graphics Designer</p>
+            <h1 className="hero-title">Mst Ayesha Khatun</h1>
+            <p className="hero-bio">
+              Crafting tactile stories with gradients, texture, and type.
+              Pairing brand strategy with playful experimentation for prints,
+              posts, and digital moods.
+            </p>
+            <div className="hero-tags">
+              {highlights.map((item) => (
+                <span key={item.label}>
+                  {item.label}: {item.value}
+                </span>
+              ))}
             </div>
-        </main>
-    </>
+          </div>
+          <div className="hero-right">
+            <div className="hero-badge" aria-hidden="true">
+              ✦
+            </div>
+            <p>Chittagong, Bangladesh</p>
+            <div className="hero-links">
+              <a href="#projects">Case Studies</a>
+              <a href="#contact">Say Hi</a>
+            </div>
+          </div>
+        </section>
+
+        <section className="info-grid">
+          <div className="info-card">
+            <h4>What sparks joy</h4>
+            <div className="spark-list">
+              {sparks.map((item) => (
+                <div key={item}>• {item}</div>
+              ))}
+            </div>
+          </div>
+          <div className="info-card">
+            <h4>Tools & textures</h4>
+            <div className="tools-list">
+              {tools.map((tool) => (
+                <span key={tool}>{tool}</span>
+              ))}
+            </div>
+          </div>
+          <div className="info-card">
+            <h4>Currently exploring</h4>
+            <p style={{ marginTop: "12px", color: "#5c4b43" }}>
+              The intersection of 3D fabrics, gentle gradients, and tactile
+              typography.
+            </p>
+          </div>
+        </section>
+
+        <section className="glass" id="projects">
+          <h2 className="section-heading">Selected Works</h2>
+          <div className="project-board">
+            {projects.map((project) => (
+              <div key={project.title} className="project-row">
+                <h3>{project.title}</h3>
+                <p>{project.note}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="glass">
+          <h2 className="section-heading">Highlights</h2>
+          <div className="highlight-grid">
+            <div className="highlight-card">
+              <strong>Freelance Designer · 2 yrs</strong>
+              <p style={{ marginTop: "8px", color: "#6f5a50" }}>
+                Packaging, social kits, and pitch visuals for local founders.
+              </p>
+            </div>
+            <div className="highlight-card">
+              <strong>Design Club Lead · BPI</strong>
+              <p style={{ marginTop: "8px", color: "#6f5a50" }}>
+                Hosting critiques, hands-on workshops, and brand jams.
+              </p>
+            </div>
+            <div className="highlight-card">
+              <strong>Adobe Certified Professional</strong>
+              <p style={{ marginTop: "8px", color: "#6f5a50" }}>
+                Illustrator + Photoshop tracks.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="glass" id="contact">
+          <h2 className="section-heading">Let’s build together</h2>
+          <div className="contact-strip">
+            {contact.map((item) => (
+              <div key={item.label} className="contact-card">
+                <p
+                  style={{
+                    letterSpacing: "0.2em",
+                    textTransform: "uppercase",
+                    fontSize: "12px",
+                    color: "#a87c69",
+                  }}>
+                  {item.label}
+                </p>
+                <a href={item.href}>{item.value}</a>
+              </div>
+            ))}
+          </div>
+        </section>
+      </div>
+    </main>
+  </>
 );
 
 export default AyeshaPortfolio;
-
