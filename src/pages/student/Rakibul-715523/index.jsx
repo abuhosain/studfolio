@@ -1,61 +1,98 @@
 import {
-    FiSmile,
-    FiBriefcase,
-    FiTrendingUp,
-    FiGithub,
-    FiLinkedin,
-    FiGlobe,
-} from 'react-icons/fi';
+  FiSmile,
+  FiBriefcase,
+  FiTrendingUp,
+  FiGithub,
+  FiLinkedin,
+  FiGlobe,
+} from "react-icons/fi";
 
 const RakibulProfile = () => {
-    const skills = ['html', 'css', 'tailwindcss', 'javascript', 'typescript', 'reactjs', 'nextjs', 'nodejs', 'expressjs', 'mongodb'];
-    const stats = [
-        { label: 'Client Satisfaction', value: '98%', icon: FiSmile },
-        { label: 'Completed Projects', value: '35+', icon: FiBriefcase },
-        { label: 'Running Products', value: '4', icon: FiTrendingUp },
-    ];
-    const socialLinks = [
-        { label: 'GitHub', icon: FiGithub, href: '#' },
-        { label: 'LinkedIn', icon: FiLinkedin, href: '#' },
-        { label: 'Portfolio', icon: FiGlobe, href: '#' },
-    ];
-    const projects = [
-        {
-            title: 'Studfolio Dashboard',
-            description: 'Interactive student portfolio dashboard featuring analytics and personalized feeds.',
-            image: 'https://images.unsplash.com/photo-1522199710521-72d69614c702?auto=format&fit=crop&w=900&q=60',
-            codeUrl: '#',
-            liveUrl: '#',
-        },
-        {
-            title: 'Learning Platform UI',
-            description: 'Responsive UI kit for an online learning platform with focus on accessibility.',
-            image: 'https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=900&q=60',
-            codeUrl: '#',
-            liveUrl: '#',
-        },
-        {
-            title: 'Learning Platform UI2',
-            description: 'Responsive UI kit for an online learning platform with focus on accessibility2.',
-            image: 'https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=900&q=60',
-            codeUrl: '#',
-            liveUrl: '#',
-        },
-    ];
-    const stack = [
-        { title: 'Experience Layer', list: ['Next.js App Router', 'Framer Motion', 'Radix UI', 'Design Tokens'] },
-        { title: 'Core APIs', list: ['Node.js', 'tRPC / GraphQL', 'Postgres + Prisma', 'Redis Streams'] },
-        { title: 'DevOps & Cloud', list: ['AWS CDK', 'Docker', 'Vercel / Fly.io', 'GitHub Actions'] },
-    ];
-    const rituals = [
-        { title: 'Blueprint Sessions', detail: 'Whiteboard flows, align on success metrics, and freeze contracts before sprint zero.' },
-        { title: 'Atomic Delivery', detail: 'Ship vertical slices with contract tests, feature flags, and automated rollbacks wired into CI/CD.' },
-        { title: 'Pulse Reviews', detail: 'Stream logs + metrics, run chaos drills, and iterate based on user signals every cycle.' },
-    ];
+  const skills = [
+    "html",
+    "css",
+    "tailwindcss",
+    "javascript",
+    "typescript",
+    "reactjs",
+    "nextjs",
+    "nodejs",
+    "expressjs",
+    "mongodb",
+  ];
+  const stats = [
+    { label: "Client Satisfaction", value: "98%", icon: FiSmile },
+    { label: "Completed Projects", value: "35+", icon: FiBriefcase },
+    { label: "Running Products", value: "4", icon: FiTrendingUp },
+  ];
+  const socialLinks = [
+    { label: "GitHub", icon: FiGithub, href: "#" },
+    { label: "LinkedIn", icon: FiLinkedin, href: "#" },
+    { label: "Portfolio", icon: FiGlobe, href: "#" },
+  ];
+  const projects = [
+    {
+      title: "Card Dealer",
+      description: "This is description",
+      image: "https://i.ibb.co.com/39CRH9Sp/MOTORX.png",
+      codeUrl: "#",
+      liveUrl: "#",
+    },
+    {
+      title: "Sky Fighter Game",
+      description: "This is description",
+      image: "https://i.ibb.co.com/pkTNCTM/sky-fight.jpg",
+      codeUrl: "#",
+      liveUrl: "#",
+    },
+    {
+      title: "Event Aura",
+      description: "This is description",
+      image: "https://i.ibb.co.com/27FSkHFZ/eventaura.png",
+      codeUrl: "#",
+      liveUrl: "#",
+    },
+  ];
+  const stack = [
+    {
+      title: "Experience Layer",
+      list: [
+        "Next.js App Router",
+        "Framer Motion",
+        "Radix UI",
+        "Design Tokens",
+      ],
+    },
+    {
+      title: "Core APIs",
+      list: ["Node.js", "tRPC / GraphQL", "Postgres + Prisma", "Redis Streams"],
+    },
+    {
+      title: "DevOps & Cloud",
+      list: ["AWS CDK", "Docker", "Vercel / Fly.io", "GitHub Actions"],
+    },
+  ];
+  const rituals = [
+    {
+      title: "Blueprint Sessions",
+      detail:
+        "Whiteboard flows, align on success metrics, and freeze contracts before sprint zero.",
+    },
+    {
+      title: "Atomic Delivery",
+      detail:
+        "Ship vertical slices with contract tests, feature flags, and automated rollbacks wired into CI/CD.",
+    },
+    {
+      title: "Pulse Reviews",
+      detail:
+        "Stream logs + metrics, run chaos drills, and iterate based on user signals every cycle.",
+    },
+  ];
 
-    return (
-        <div className="rakibul-page">
-            <style>{`
+  return (
+    <div className="rakibul-page">
+      <style>{`
                 :root {
                     color-scheme: dark;
                 }
@@ -374,142 +411,148 @@ const RakibulProfile = () => {
                     }
                 }
             `}</style>
-            <div className="rakibul-container">
-                <div className="hero-cluster">
-                    <section className="hero">
-                        <div className="hero-content">
-                        <div className="hero-copy">
-                            <span className="hero-badges">Full Stack Developer</span>
-                            <h1>Rakibul Hasan</h1>
-                            <p>
-                                I architect resilient APIs, craft polished interfaces, and ship features across the stack using
-                                Next.js, Node.js, and cloud-native pipelines.
-                            </p>
-                            <div className="hero-actions">
-                                <a href="#projects" className="primary">
-                                    View Projects
-                                </a>
-                                <a href="#contact" className="secondary">
-                                    Work With Me
-                                </a>
-                            </div>
-                        </div>
-                        <div className="hero-media">
-                            <div className="portrait-frame">
-                                <img
-                                    src="https://images.unsplash.com/photo-1506765515384-028b60a9709b?auto=format&fit=crop&w=800&q=80"
-                                    alt="Rakibul Hasan portrait"
-                                />
-                            </div>
-                            <div className="social-row">
-                                {socialLinks.map((social) => (
-                                    <a key={social.label} href={social.href} aria-label={social.label}>
-                                        <social.icon />
-                                    </a>
-                                ))}
-                            </div>
-                        </div>
-                        </div>
-                    </section>
-
-                    <div className="skills-marquee">
-                        <marquee>
-                            <div className="skills-list">
-                                {skills.map((skill) => (
-                                    <span key={skill}>{skill}</span>
-                                ))}
-                            </div>
-                        </marquee>
-                    </div>
+      <div className="rakibul-container">
+        <div className="hero-cluster">
+          <section className="hero">
+            <div className="hero-content">
+              <div className="hero-copy">
+                <span className="hero-badges">Full Stack Developer</span>
+                <h1>Rakibul Hasan</h1>
+                <p>
+                  I architect resilient APIs, craft polished interfaces, and
+                  ship features across the stack using Next.js, Node.js, and
+                  cloud-native pipelines.
+                </p>
+                <div className="hero-actions">
+                  <a href="#projects" className="primary">
+                    View Projects
+                  </a>
+                  <a href="#contact" className="secondary">
+                    Work With Me
+                  </a>
                 </div>
-
-                <section className="section">
-                    <div className="section-header">
-                        <p className="section-kicker">About</p>
-                        <h2 className="section-title">Beyond the Code</h2>
-                        <p className="section-description">
-                            I partner with product teams to design APIs, craft immersive UIs, and automate delivery pipelines. My goal:
-                            ship bold customer experiences without sacrificing stability or performance.
-                        </p>
-                    </div>
-                    <div className="stat-grid">
-                        {stats.map((card) => (
-                            <article key={card.label} className="stat-card">
-                                <card.icon size={36} />
-                                <h3>{card.value}</h3>
-                                <p>{card.label}</p>
-                            </article>
-                        ))}
-                    </div>
-                </section>
-
-                <section className="section" id="projects">
-                    <div className="section-header">
-                        <p className="section-kicker">Ship</p>
-                        <h2 className="section-title">Project Samples</h2>
-                        <p className="section-description">
-                            A snapshot of recent full-stack initiatives blending Next.js frontends, resilient APIs, and cloud workflows.
-                        </p>
-                    </div>
-                    <div className="projects-grid">
-                        {projects.map((project) => (
-                            <article key={project.title} className="project-card">
-                                <div className="project-media">
-                                    <img src={project.image} alt={project.title} />
-                                </div>
-                                <div className="project-body">
-                                    <h3>{project.title}</h3>
-                                    <p>{project.description}</p>
-                                    <div className="project-actions">
-                                        <a href={project.codeUrl} className="code">
-                                            Code
-                                        </a>
-                                        <a href={project.liveUrl} className="live">
-                                            Live Preview
-                                        </a>
-                                    </div>
-                                </div>
-                            </article>
-                        ))}
-                    </div>
-                </section>
-
-                <section className="section">
-                    <div className="section-header">
-                        <p className="section-kicker">Stack</p>
-                        <h2 className="section-title">Tech Focus</h2>
-                    </div>
-                    <div className="stack-grid">
-                        {stack.map((group) => (
-                            <article key={group.title} className="stack-card">
-                                <p className="section-kicker">{group.title}</p>
-                                <ul>
-                                    {group.list.map((item) => (
-                                        <li key={item}>{item}</li>
-                                    ))}
-                                </ul>
-                            </article>
-                        ))}
-                    </div>
-                </section>
-
-                <section className="section" id="contact">
-                    <div className="section-header">
-                        <p className="section-kicker">Process</p>
-                        <h2 className="section-title">Delivery Rituals</h2>
-                    </div>
-                    <div className="ritual-grid">
-                        {rituals.map((step) => (
-                            <article key={step.title} className="ritual-card">
-                                <p className="ritual-title">{step.title}</p>
-                                <p>{step.detail}</p>
-                            </article>
-                        ))}
-                    </div>
-                </section>
+              </div>
+              <div className="hero-media">
+                <div className="portrait-frame">
+                  <img
+                    src="https://images.unsplash.com/photo-1506765515384-028b60a9709b?auto=format&fit=crop&w=800&q=80"
+                    alt="Rakibul Hasan portrait"
+                  />
+                </div>
+                <div className="social-row">
+                  {socialLinks.map((social) => (
+                    <a
+                      key={social.label}
+                      href={social.href}
+                      aria-label={social.label}>
+                      <social.icon />
+                    </a>
+                  ))}
+                </div>
+              </div>
             </div>
+          </section>
+
+          <div className="skills-marquee">
+            <marquee>
+              <div className="skills-list">
+                {skills.map((skill) => (
+                  <span key={skill}>{skill}</span>
+                ))}
+              </div>
+            </marquee>
+          </div>
         </div>
-    );
+
+        <section className="section">
+          <div className="section-header">
+            <p className="section-kicker">About</p>
+            <h2 className="section-title">Beyond the Code</h2>
+            <p className="section-description">
+              I partner with product teams to design APIs, craft immersive UIs,
+              and automate delivery pipelines. My goal: ship bold customer
+              experiences without sacrificing stability or performance.
+            </p>
+          </div>
+          <div className="stat-grid">
+            {stats.map((card) => (
+              <article key={card.label} className="stat-card">
+                <card.icon size={36} />
+                <h3>{card.value}</h3>
+                <p>{card.label}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="section" id="projects">
+          <div className="section-header">
+            <p className="section-kicker">Ship</p>
+            <h2 className="section-title">Project Samples</h2>
+            <p className="section-description">
+              A snapshot of recent full-stack initiatives blending Next.js
+              frontends, resilient APIs, and cloud workflows.
+            </p>
+          </div>
+          <div className="projects-grid">
+            {projects.map((project) => (
+              <article key={project.title} className="project-card">
+                <div className="project-media">
+                  <img src={project.image} alt={project.title} />
+                </div>
+                <div className="project-body">
+                  <h3>{project.title}</h3>
+                  <p>{project.description}</p>
+                  <div className="project-actions">
+                    <a href={project.codeUrl} className="code">
+                      Code
+                    </a>
+                    <a href={project.liveUrl} className="live">
+                      Live Preview
+                    </a>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="section">
+          <div className="section-header">
+            <p className="section-kicker">Stack</p>
+            <h2 className="section-title">Tech Focus</h2>
+          </div>
+          <div className="stack-grid">
+            {stack.map((group) => (
+              <article key={group.title} className="stack-card">
+                <p className="section-kicker">{group.title}</p>
+                <ul>
+                  {group.list.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="section" id="contact">
+          <div className="section-header">
+            <p className="section-kicker">Process</p>
+            <h2 className="section-title">Delivery Rituals</h2>
+          </div>
+          <div className="ritual-grid">
+            {rituals.map((step) => (
+              <article key={step.title} className="ritual-card">
+                <p className="ritual-title">{step.title}</p>
+                <p>{step.detail}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+      </div>
+    </div>
+  );
 };
 
 export default RakibulProfile;
