@@ -1,10 +1,4 @@
-import React, { useEffect } from "react";
-
 const RobinPortfolio = () => {
-  useEffect(() => {
-    document.getElementById("year").textContent = new Date().getFullYear();
-  }, []);
-
   return (
     <>
       {/* Injecting CSS */}
@@ -42,7 +36,6 @@ const RobinPortfolio = () => {
               display:flex;
               justify-content:space-between;
               align-items:center;
-              margin-bottom:100px;
             }
 
             .logo{
@@ -153,7 +146,6 @@ const RobinPortfolio = () => {
             }
 
             footer{
-              margin-top:160px;
               color:var(--muted);
               font-size:14px;
             }
@@ -169,108 +161,114 @@ const RobinPortfolio = () => {
 
       {/* HTML Converted to JSX */}
       <div className="bg-black">
-      <div className="container">
-        <header>
-          <div className="logo text-white">Yeyan Islam Robin</div>
-          <nav>
-            <a href="#services">Services</a>
-            <a href="#work">Work</a>
-            <a href="#contact">Contact</a>
-          </nav>
-        </header>
+        <div className="container">
+          <header>
+            <div className="logo text-white">Yeyan Islam Robin</div>
+            <nav>
+              <a href="#services">Services</a>
+              <a href="#work">Work</a>
+              <a href="#contact">Contact</a>
+            </nav>
+          </header>
 
-        <section className="hero">
-          <h1 className="text-white">
-            I design <span>clean & modern</span>
-            <br />
-            WordPress websites
-          </h1>
-          <p>
-            WordPress Web Designer focused on simple UI, strong UX, and
-            professional visuals that help businesses grow online.
-          </p>
-          <a href="#contact" className="btn">
-            Hire Me
-          </a>
-        </section>
-
-        <section id="services">
-          <h2 className="text-white font-bold">Services</h2>
-          <p>Simple solutions with premium design quality and performance.</p>
-
-          <div className="services">
-            <div className="service">
-              <h3 className="text-white font-bold">WordPress Design</h3>
-              <p>
-                High-quality layouts with clear structure, spacing, and modern
-                typography.
-              </p>
-            </div>
-
-            <div className="service">
-              <h3 className="text-white font-bold">WooCommerce</h3>
-              <p>
-                Clean online stores designed to convert visitors into customers.
-              </p>
-            </div>
-
-            <div className="service">
-              <h3 className="text-white font-bold">Speed & SEO</h3>
-              <p>
-                Optimized performance, fast load times, and SEO-friendly builds.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section id="work">
-          <h2 className="text-white font-bold">Selected Work</h2>
-          <p>A small collection of recent WordPress projects.</p>
-
-          <div className="projects">
-            <div className="project">
-              <img
-                src="https://via.placeholder.com/600x400?text=Project+01"
-                alt="Project 01"
-              />
-              <div>
-                <strong className="text-white font-bold">Business Website</strong>
-                <span style={{ color: "var(--muted)" }}>
-                  UI redesign + speed
-                </span>
-              </div>
-            </div>
-
-            <div className="project">
-              <img
-                src="https://via.placeholder.com/600x400?text=Project+02"
-                alt="Project 02"
-              />
-              <div>
-                <strong className="text-white font-bold">E-commerce Store</strong>
-                <span style={{ color: "var(--muted)" }}>WooCommerce</span>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="contact">
-          <h2 className="text-white font-bold">Let’s work together</h2>
-          <p>Have a project in mind? I’m available for freelance work.</p>
-
-          <div className="contact text-white font-bold">
+          <section className="hero">
+            <h1 className="text-white">
+              I design <span>clean & modern</span>
+              <br />
+              WordPress websites
+            </h1>
             <p>
-              <strong>Email:</strong> robin@email.com
+              WordPress Web Designer focused on simple UI, strong UX, and
+              professional visuals that help businesses grow online.
             </p>
-            <p>
-              <strong>Location:</strong> Gaibandha, Bangladesh
-            </p>
-            <a href="mailto:your@email.com" className="btn">
-              Contact Me
+            <a href="#contact" className="btn">
+              Hire Me
             </a>
-          </div>
-        </section>
-      </div>
+          </section>
+
+          <section id="services">
+            <h2 className="text-white font-bold">Services</h2>
+            <p>Simple solutions with premium design quality and performance.</p>
+
+            <div className="services">
+              <div className="service">
+                <h3 className="text-white font-bold">WordPress Design</h3>
+                <p>
+                  High-quality layouts with clear structure, spacing, and modern
+                  typography.
+                </p>
+              </div>
+
+              <div className="service">
+                <h3 className="text-white font-bold">WooCommerce</h3>
+                <p>
+                  Clean online stores designed to convert visitors into
+                  customers.
+                </p>
+              </div>
+
+              <div className="service">
+                <h3 className="text-white font-bold">Speed & SEO</h3>
+                <p>
+                  Optimized performance, fast load times, and SEO-friendly
+                  builds.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section id="work">
+            <h2 className="text-white font-bold">Selected Work</h2>
+            <p>A small collection of recent WordPress projects.</p>
+
+            <div className="projects">
+              <div className="project">
+                <img
+                  src="https://via.placeholder.com/600x400?text=Project+01"
+                  alt="Project 01"
+                />
+                <div>
+                  <strong className="text-white font-bold">
+                    Business Website
+                  </strong>
+                  <span style={{ color: "var(--muted)" }}>
+                    UI redesign + speed
+                  </span>
+                </div>
+              </div>
+
+              <div className="project">
+                <img
+                  src="https://via.placeholder.com/600x400?text=Project+02"
+                  alt="Project 02"
+                />
+                <div>
+                  <strong className="text-white font-bold">
+                    E-commerce Store
+                  </strong>
+                  <span style={{ color: "var(--muted)" }}>WooCommerce</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="contact">
+            <h2 className="text-white font-bold">Let’s work together</h2>
+            <p>Have a project in mind? I’m available for freelance work.</p>
+
+            <div className="contact text-white font-bold">
+              <p>
+                <strong>Email:</strong> robin@email.com
+              </p>
+              <p>
+                <strong>Location:</strong> Gaibandha, Bangladesh
+              </p>
+              <a href="mailto:your@email.com" className="btn">
+                Contact Me
+              </a>
+            </div>
+          </section>
+        </div>
       </div>
     </>
   );
