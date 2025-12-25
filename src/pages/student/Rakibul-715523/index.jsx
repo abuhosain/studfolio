@@ -32,25 +32,25 @@ const RakibulProfile = () => {
   ];
   const projects = [
     {
-      title: "Card Dealer",
-      description: "This is description",
-      image: "https://i.ibb.co.com/39CRH9Sp/MOTORX.png",
-      codeUrl: "#",
-      liveUrl: "#",
-    },
-    {
       title: "Sky Fighter Game",
       description: "This is description",
       image: "https://i.ibb.co.com/pkTNCTM/sky-fight.jpg",
-      codeUrl: "#",
-      liveUrl: "#",
+      codeUrl: "https://github.com/Rakibjrb/sky-fighter",
+      liveUrl: "https://sky-fight.netlify.app/",
+    },
+    {
+      title: "Card Dealer",
+      description: "This is description",
+      image: "https://i.ibb.co.com/39CRH9Sp/MOTORX.png",
+      codeUrl: "https://github.com/Rakibjrb/car-dealer/tree/master/car-dealer",
+      liveUrl: "https://car-dealer-r7.web.app/",
     },
     {
       title: "Event Aura",
       description: "This is description",
       image: "https://i.ibb.co.com/27FSkHFZ/eventaura.png",
-      codeUrl: "#",
-      liveUrl: "#",
+      codeUrl: "",
+      liveUrl: "https://wedding-event-management-a9.web.app/",
     },
   ];
   const stack = [
@@ -99,27 +99,28 @@ const RakibulProfile = () => {
                 .rakibul-page {
                     background: radial-gradient(circle at 15% 15%, rgba(37, 99, 235, 0.15), transparent 55%), #020617;
                     min-height: 100vh;
-                    padding: 48px 20px 80px;
                     font-family: 'Space Grotesk', 'Inter', system-ui, sans-serif;
-                    display: flex;
-                    justify-content: center;
+                   /* display: flex; 
+                    justify-content: center; */
                     color: #e2e8f0;
                 }
                 .rakibul-container {
-                    width: min(1180px, 100%);
+                    width: min(1280px, 100%);
                     display: flex;
                     flex-direction: column;
                     gap: 48px;
-                }
-                .hero-cluster {
-                    border-radius: 32px;
-                    overflow: hidden;
-                    border: 1px solid rgba(148, 163, 184, 0.12);
+                    margin: 0 auto;
+                    padding: 60px 16px;
                 }
                 .hero {
-                    position: relative;
-                    padding: clamp(24px, 4vw, 56px);
+                    width: 100%;
+                    height: 87vh;
+                    padding: 16px;
                     background: linear-gradient(135deg, rgba(2, 6, 23, 0.95), rgba(15, 23, 42, 0.9));
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
                 }
                 .hero::before {
                     content: '';
@@ -129,17 +130,20 @@ const RakibulProfile = () => {
                     z-index: 0;
                 }
                 .hero-content {
-                    position: relative;
                     z-index: 1;
-                    display: grid;
-                    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-                    gap: 40px;
-                    align-items: center;
+                    width: 70%;
+                    display: flex;
+                    justify-content: space-between;
                 }
                 .hero-copy h1 {
-                    font-size: clamp(2.4rem, 5vw, 3.8rem);
+                    font-size: clamp(2.4rem, 5vw, 3.9rem);
                     margin: 12px 0;
                     font-weight: 600;
+                }
+                .hero-copy p {
+                    width: 70%;
+                    text-align: left;
+                    margin: 20px 0;
                 }
                 .hero-badges {
                     display: inline-flex;
@@ -185,8 +189,9 @@ const RakibulProfile = () => {
                 .hero-media {
                     display: flex;
                     flex-direction: column;
+                    justify-content: center;
                     align-items: center;
-                    gap: 20px;
+                    gap: 24px;
                 }
                 .portrait-frame {
                     width: 260px;
@@ -229,6 +234,10 @@ const RakibulProfile = () => {
                 .skills-marquee {
                     border: 0;
                     background: rgba(0, 0, 0, 0.7);
+                    position: fixed;
+                    width: 100%;
+                    left: 0;
+                    bottom: 0;
                 }
                 .skills-marquee marquee {
                     height: 60px;
@@ -411,59 +420,68 @@ const RakibulProfile = () => {
                     }
                 }
             `}</style>
-      <div className="rakibul-container">
-        <div className="hero-cluster">
-          <section className="hero">
-            <div className="hero-content">
-              <div className="hero-copy">
-                <span className="hero-badges">Full Stack Developer</span>
-                <h1>Rakibul Hasan</h1>
-                <p>
-                  I architect resilient APIs, craft polished interfaces, and
-                  ship features across the stack using Next.js, Node.js, and
-                  cloud-native pipelines.
-                </p>
-                <div className="hero-actions">
-                  <a href="#projects" className="primary">
-                    View Projects
-                  </a>
-                  <a href="#contact" className="secondary">
-                    Work With Me
-                  </a>
-                </div>
-              </div>
-              <div className="hero-media">
-                <div className="portrait-frame">
-                  <img
-                    src="https://images.unsplash.com/photo-1506765515384-028b60a9709b?auto=format&fit=crop&w=800&q=80"
-                    alt="Rakibul Hasan portrait"
-                  />
-                </div>
-                <div className="social-row">
-                  {socialLinks.map((social) => (
-                    <a
-                      key={social.label}
-                      href={social.href}
-                      aria-label={social.label}>
-                      <social.icon />
-                    </a>
-                  ))}
-                </div>
+      <div className="hero-cluster">
+        <section className="hero">
+          <div className="hero-content">
+            <div className="hero-copy">
+              <span className="hero-badges">Full Stack Developer</span>
+              <h1>Rakibul Hasan</h1>
+              <p>
+                I architect resilient APIs, craft polished interfaces, and ship
+                features across the stack using Next.js, Node.js, and
+                cloud-native pipelines.
+              </p>
+              <div className="hero-actions">
+                <a
+                  href="https://rakibul-dev.vercel.app/"
+                  target="_blank"
+                  className="primary"
+                >
+                  View Portfolio
+                </a>
+                <a
+                  href="https://rakibul-dev.vercel.app/contact"
+                  target="_blank"
+                  className="secondary"
+                >
+                  Contact Now
+                </a>
               </div>
             </div>
-          </section>
-
-          <div className="skills-marquee">
-            <marquee>
-              <div className="skills-list">
-                {skills.map((skill) => (
-                  <span key={skill}>{skill}</span>
+            {/* <div className="hero-media">
+              <div className="portrait-frame">
+                <img
+                  src="https://images.unsplash.com/photo-1506765515384-028b60a9709b?auto=format&fit=crop&w=800&q=80"
+                  alt="Rakibul Hasan portrait"
+                />
+              </div>
+              <div className="social-row">
+                {socialLinks.map((social) => (
+                  <a
+                    key={social.label}
+                    href={social.href}
+                    aria-label={social.label}
+                  >
+                    <social.icon />
+                  </a>
                 ))}
               </div>
-            </marquee>
+            </div> */}
           </div>
-        </div>
+        </section>
 
+        <div className="skills-marquee">
+          <marquee>
+            <div className="skills-list">
+              {skills.map((skill) => (
+                <span key={skill}>{skill}</span>
+              ))}
+            </div>
+          </marquee>
+        </div>
+      </div>
+
+      <div className="rakibul-container">
         <section className="section">
           <div className="section-header">
             <p className="section-kicker">About</p>
