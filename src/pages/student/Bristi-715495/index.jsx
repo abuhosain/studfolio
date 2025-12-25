@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
 const BristiPortfolio = () => {
-    return (
-        <>
-            <style>{`
+  return (
+    <>
+      <style>{`
                 .bristi-shell {
                     min-height: 100vh;
                     font-family: "Poppins", "Inter", system-ui, sans-serif;
@@ -286,25 +286,32 @@ const BristiPortfolio = () => {
                 }
             `}</style>
 
-            <div className="bristi-shell">
-                <div className="bristi-hero-grid">
-                    <div className="bristi-hero-card">
-                        <div className="bristi-hero-pill">Focused Computer Science Student</div>
-                        <h1 className="bristi-hero-name">
-                            <span>Osna Akter Bristi</span>
-                        </h1>
-                        <p className="bristi-hero-meta">Roll 715495</p>
-                        <p className="bristi-hero-bio">
-                            I am building a strong base in computer science—learning core theory, problem solving,
-                            and how to express ideas clearly in both code and simple web pages using HTML and CSS.
-                        </p>
-                        <div className="bristi-hero-actions">
-                            <a className="bristi-hero-btn primary" href="#academics">View Academic Profile</a>
-                            <a className="bristi-hero-btn secondary" href="#contact">Contact Info</a>
-                        </div>
-                    </div>
+      <div className="bristi-shell">
+        <div className="bristi-hero-grid">
+          <div className="bristi-hero-card">
+            <div className="bristi-hero-pill">
+              Focused Computer Science Student
+            </div>
+            <h1 className="bristi-hero-name">
+              <span>Osna Akter Bristi</span>
+            </h1>
+            <p className="bristi-hero-meta">Roll 715495</p>
+            <p className="bristi-hero-bio">
+              I am building a strong base in computer science—learning core
+              theory, problem solving, and how to express ideas clearly in both
+              code and simple web pages using HTML and CSS.
+            </p>
+            <div className="bristi-hero-actions">
+              <a className="bristi-hero-btn primary" href="#academics">
+                View Academic Profile
+              </a>
+              <a className="bristi-hero-btn secondary" href="#contact">
+                Contact Info
+              </a>
+            </div>
+          </div>
 
-                    <div className="bristi-stat-panel">
+          {/* <div className="bristi-stat-panel">
                         <div className="bristi-stat-grid">
                             <div className="bristi-stat-block">
                                 <h3>1</h3>
@@ -322,120 +329,109 @@ const BristiPortfolio = () => {
                                 <p className="bristi-stat-note">Building skills in web development and problem solving.</p>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </div> */}
+        </div>
 
-                <section id="academics" className="bristi-section">
-                    <h2>Academic Snapshot</h2>
-                    <p className="bristi-lead">
-                        A brief overview of Osna Akter Bristi's basic academic identity inside this portfolio.
-                    </p>
-                    <div className="bristi-info-grid">
-                        <div className="bristi-info-card">
-                            <label>Full Name</label>
-                            <p>Osna Akter Bristi</p>
-                        </div>
-                        <div className="bristi-info-card">
-                            <label>Roll</label>
-                            <p>715495</p>
-                        </div>
-                    </div>
+        <section className="bristi-section">
+          <h2>Learning &amp; Projects</h2>
+          <p className="bristi-lead">
+            Simple learning tasks and practice projects that will slowly grow
+            into a full portfolio.
+          </p>
+          <div className="bristi-project-grid">
+            <article className="bristi-project-card">
+              <p className="bristi-project-type">Practice</p>
+              <h3>Personal Portfolio Layout</h3>
+              <p>
+                A static HTML and CSS layout that introduces her name, roll, and
+                academic focus using clean sections.
+              </p>
+              <p className="bristi-project-stack">Built with: HTML · CSS</p>
+            </article>
+            <article className="bristi-project-card">
+              <p className="bristi-project-type">Study</p>
+              <h3>Notes &amp; Summaries</h3>
+              <p>
+                Organizing study notes into simple, readable pages to revise
+                topics before exams and keep track of progress.
+              </p>
+              <p className="bristi-project-stack">
+                Focus: Clear Writing · Consistency
+              </p>
+            </article>
+            <article className="bristi-project-card">
+              <p className="bristi-project-type">Goal</p>
+              <h3>Future Web Projects</h3>
+              <p>
+                Plans to expand this page with more detailed academic records,
+                results and small web experiments.
+              </p>
+              <p className="bristi-project-stack">Next: More HTML · More CSS</p>
+            </article>
+          </div>
+        </section>
 
-                    <div className="bristi-skill-list">
-                        <div className="bristi-skill-row">
-                            <div className="bristi-skill-meta">
-                                <span>HTML &amp; CSS Basics</span>
-                                <span>Growing</span>
-                            </div>
-                            <div className="bristi-skill-bar">
-                                <span style={{ width: '55%' }} />
-                            </div>
-                        </div>
-                        <div className="bristi-skill-row">
-                            <div className="bristi-skill-meta">
-                                <span>Problem Solving</span>
-                                <span>Improving</span>
-                            </div>
-                            <div className="bristi-skill-bar">
-                                <span style={{ width: '50%' }} />
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section className="bristi-section">
-                    <h2>Learning &amp; Projects</h2>
-                    <p className="bristi-lead">
-                        Simple learning tasks and practice projects that will slowly grow into a full portfolio.
-                    </p>
-                    <div className="bristi-project-grid">
-                        <article className="bristi-project-card">
-                            <p className="bristi-project-type">Practice</p>
-                            <h3>Personal Portfolio Layout</h3>
-                            <p>
-                                A static HTML and CSS layout that introduces her name, roll, and academic
-                                focus using clean sections.
-                            </p>
-                            <p className="bristi-project-stack">Built with: HTML · CSS</p>
-                        </article>
-                        <article className="bristi-project-card">
-                            <p className="bristi-project-type">Study</p>
-                            <h3>Notes &amp; Summaries</h3>
-                            <p>
-                                Organizing study notes into simple, readable pages to revise topics before exams and keep
-                                track of progress.
-                            </p>
-                            <p className="bristi-project-stack">Focus: Clear Writing · Consistency</p>
-                        </article>
-                        <article className="bristi-project-card">
-                            <p className="bristi-project-type">Goal</p>
-                            <h3>Future Web Projects</h3>
-                            <p>
-                                Plans to expand this page with more detailed academic records, results and small web
-                                experiments.
-                            </p>
-                            <p className="bristi-project-stack">Next: More HTML · More CSS</p>
-                        </article>
-                    </div>
-                </section>
-
-                <section className="bristi-section">
-                    <h2>Character &amp; Support</h2>
-                    <p className="bristi-lead">
-                        A student identity is more than marks—it is also discipline, patience, and willingness to learn.
-                    </p>
-                    <div className="bristi-testimonial-grid">
-                        <blockquote className="bristi-testimonial-card">
-                            "Bristi is calm, careful, and consistent with her work—she asks questions when needed and
-                            completes tasks with focus."
-                            <span>Teacher's Observation</span>
-                        </blockquote>
-                        <blockquote className="bristi-testimonial-card">
-                            "She keeps her study space organized and helps friends when they get stuck in small problems."
-                            <span>Friend's Perspective</span>
-                        </blockquote>
-                    </div>
-                </section>
-
-                <section id="contact" className="bristi-section">
-                    <h2>Contact &amp; Basic Info</h2>
-                    <p className="bristi-lead">
-                        Simple details to recognize Osna Akter Bristi in academic records and communication.
-                    </p>
-                    <div className="bristi-contact-panel">
-                        <div className="bristi-contact-card">
-                            <label>Student Name</label>
-                            <p>Osna Akter Bristi</p>
-                        </div>
-                        <div className="bristi-contact-card">
-                            <label>Roll Number</label>
-                            <p>715495</p>
-                        </div>
-                    </div>
-                </section>
+        <section id="academics" className="bristi-section">
+          <h2>Academic Snapshot</h2>
+          <p className="bristi-lead">
+            A brief overview of Osna Akter Bristi's basic academic identity
+            inside this portfolio.
+          </p>
+          <div className="bristi-info-grid">
+            <div className="bristi-info-card">
+              <label>Full Name</label>
+              <p>Osna Akter Bristi</p>
             </div>
-        </>
-    );
+            <div className="bristi-info-card">
+              <label>Roll</label>
+              <p>715495</p>
+            </div>
+          </div>
+
+          <div className="bristi-skill-list">
+            <div className="bristi-skill-row">
+              <div className="bristi-skill-meta">
+                <span>HTML &amp; CSS Basics</span>
+                <span>Growing</span>
+              </div>
+              <div className="bristi-skill-bar">
+                <span style={{ width: "55%" }} />
+              </div>
+            </div>
+            {/* <div className="bristi-skill-row">
+              <div className="bristi-skill-meta">
+                <span>Problem Solving</span>
+                <span>Improving</span>
+              </div>
+              <div className="bristi-skill-bar">
+                <span style={{ width: "50%" }} />
+              </div>
+            </div> */}
+          </div>
+        </section>
+
+        <section className="bristi-section">
+          <h2>Character &amp; Support</h2>
+          <p className="bristi-lead">
+            A student identity is more than marks—it is also discipline,
+            patience, and willingness to learn.
+          </p>
+          <div className="bristi-testimonial-grid">
+            <blockquote className="bristi-testimonial-card">
+              "Bristi is calm, careful, and consistent with her work—she asks
+              questions when needed and completes tasks with focus."
+              <span>Teacher's Observation</span>
+            </blockquote>
+            <blockquote className="bristi-testimonial-card">
+              "She keeps her study space organized and helps friends when they
+              get stuck in small problems."
+              <span>Friend's Perspective</span>
+            </blockquote>
+          </div>
+        </section>
+      </div>
+    </>
+  );
 };
 
 export default BristiPortfolio;
